@@ -11,3 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+if [ ! -f ~/.shell_modifications ]; then
+  touch ~/.shell_modifications
+fi
+setopt clobber
+setopt hist_ignore_dups
+unsetopt extended_glob
+unsetopt share_history
+source ~/.shell_modifications
