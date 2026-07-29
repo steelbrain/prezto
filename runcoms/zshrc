@@ -15,3 +15,5 @@ setopt clobber
 setopt hist_ignore_dups
 unsetopt extended_glob
 unsetopt share_history
+alias cp="/bin/cp"
+alias rm="/bin/rm"
